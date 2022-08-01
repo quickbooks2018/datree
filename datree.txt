@@ -1,22 +1,39 @@
+#################
 # yaml validation
+#################
 datree test ~/.datree/k8s-demo.yaml
 
+###################################
 # schema validation & policy checks
+###################################
 datree test --schema-version 1.21.1 ingress.yaml
 
+#################################
 # wild card checks on a directory
+#################################
 datree test ~/.datree/*.y*ml
 
+##############################################################################
 # apply yaml validation against a specific policy, created from datree webui
 # create a policy from webui of datree and enable & disable checks is a policy
+###############################################################################
 datree test ~/.datree/*.y*ml -p production
 
-# helm datree plugin
+#################################
+# helm charts testing with datree
+#################################
+helm datree test example-app --values values.yaml
+
+##################################################
+# helm datree plugin for existing kubernetes infra
+##################################################
 https://github.com/datreeio/helm-datree
 
 helm plugin install https://github.com/datreeio/helm-datree
 
+###################################
 # datreeio/admission-webhook-datree
+###################################
 https://github.com/datreeio/admission-webhook-datree
 
 
