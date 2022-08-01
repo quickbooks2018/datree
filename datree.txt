@@ -45,6 +45,9 @@ helm plugin install https://github.com/datreeio/helm-datree
 ----------------------------------------------------------------------------
 # This is different plugin for yaml manifest in existing kubernetes cluster
 ----------------------------------------------------------------------------
+
+apt update -y && apt install -y sudo openssl
+
 But what about resources already in your cluster ?
 Datree covers this with their kubectl plugin.
 
