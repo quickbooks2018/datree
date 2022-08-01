@@ -46,4 +46,6 @@ helm plugin install https://github.com/datreeio/helm-datree
 # This will run inside you kubernetes cluster & prevent any yaml misconfiguration
 https://github.com/datreeio/admission-webhook-datree
 
+export DATREE_TOKEN=[YOU-TOKEN] # Grab that from webui
+
 
