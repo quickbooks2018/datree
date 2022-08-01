@@ -50,4 +50,8 @@ https://github.com/datreeio/admission-webhook-datree
 
 export DATREE_TOKEN=[YOU-TOKEN] # Grab that from webui
 
+curl -L https://get.datree.io/admission-webhook -o datree.sh
+chmod +x datree.sh
+bash datree.sh
+
 
