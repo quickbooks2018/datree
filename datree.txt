@@ -57,6 +57,7 @@ curl -L https://github.com/datreeio/kubectl-datree/releases/download/v0.1.1/manu
 chmod +x /tmp/kubectl-plugin.sh
 bash /tmp/kubectl-plugin.sh
 
+export DATREE_TOKEN=your-token
 kubectl datree test -- --namespace examples
 
 
