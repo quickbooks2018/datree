@@ -42,8 +42,13 @@ https://github.com/datreeio/helm-datree
 
 helm plugin install https://github.com/datreeio/helm-datree
 
+----------------------------------------------------------------------------
+# This is different plugin for yaml manifest in existing kubernetes cluster
+----------------------------------------------------------------------------
 But what about resources already in your cluster ?
 Datree covers this with their kubectl plugin.
+
+# https://github.com/datreeio/kubectl-datree/releases
 
 curl -L https://github.com/datreeio/kubectl-datree/releases/download/v0.1.1/manual_install.sh -o /tmp/kubectl-plugin.sh
 chmod +x /tmp/kubectl-plugin.sh
