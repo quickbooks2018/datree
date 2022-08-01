@@ -1,0 +1,18 @@
+# yaml validation
+datree test ~/.datree/k8s-demo.yaml
+
+# schema validation & policy checks
+datree test --schema-version 1.21.1 ingress.yaml
+
+# wild card checks on a directory
+datree test ~/.datree/*.y*ml
+
+
+# helm datree plugin
+https://github.com/datreeio/helm-datree
+
+helm plugin install https://github.com/datreeio/helm-datree
+
+# datreeio/admission-webhook-datree
+https://github.com/datreeio/admission-webhook-datree
+
