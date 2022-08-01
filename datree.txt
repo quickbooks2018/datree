@@ -24,6 +24,15 @@ datree test ~/.datree/*.y*ml -p production
 #################################
 helm datree test example-app --values values.yaml
 
+#####################
+# datree cicd testing
+#####################
+# https://hub.datree.io/cicd-examples
+
+# Gitlab 
+https://hub.datree.io/cicd-examples/gitLab-ci-cd
+
+
 ##################################################
 # helm datree plugin for existing kubernetes infra
 ##################################################
