@@ -2,6 +2,9 @@
 https://app.datree.io/
 ----------------------
 
+datree --help
+datree test --help
+
 ########################
 # https://hub.datree.io/
 ########################
