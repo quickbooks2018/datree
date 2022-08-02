@@ -1,5 +1,12 @@
 https://app.datree.io/
 
+########################
+# https://hub.datree.io/
+########################
+
+#  Linux
+curl https://get.datree.io | /bin/bash
+
 #################
 # yaml validation
 #################
