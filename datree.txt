@@ -33,7 +33,7 @@ datree test ~/.datree/*.y*ml
 
 ##############################################################################
 # apply yaml validation against a specific policy, created from datree webui
-# create a policy from webui of datree and enable & disable checks is a policy
+# create a policy from webui of datree and enable & disable checks in a policy
 ###############################################################################
 export DATREE_TOKEN=[YOU-TOKEN] # Grab that from webui
 datree test ~/.datree/*.y*ml -p production
