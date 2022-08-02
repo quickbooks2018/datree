@@ -14,7 +14,9 @@ curl https://get.datree.io | /bin/bash
 #################
 # yaml validation
 #################
+export DATREE_TOKEN=[YOU-TOKEN] # Grab that from webui
 datree test ~/.datree/k8s-demo.yaml
+datree test ~/.datree/k8s-demo.yaml --ignore-missing-schemas
 
 ###################################
 # schema validation & policy checks
@@ -30,7 +32,10 @@ datree test ~/.datree/*.y*ml
 # apply yaml validation against a specific policy, created from datree webui
 # create a policy from webui of datree and enable & disable checks is a policy
 ###############################################################################
+export DATREE_TOKEN=[YOU-TOKEN] # Grab that from webui
 datree test ~/.datree/*.y*ml -p production
+datree test ~/.datree/*.y*ml -p production --ignore-missing-schemas
+
 
 #################################
 # helm charts testing with datree
