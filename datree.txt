@@ -51,7 +51,9 @@ helm plugin install https://github.com/datreeio/helm-datree
 #################################
 helm datree test example-app -- --values values.yaml
 
-datree test --policy production hello -- --values hello/values.yaml
+helm datree test --policy production hello -- --values hello/values.yaml
+
+helm datree test --policy production --schema-version 1.20.1 hello -- --values hello/values.yaml
 
 #####################
 # datree cicd testing
